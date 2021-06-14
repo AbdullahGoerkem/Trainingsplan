@@ -19,14 +19,18 @@ public class Oberflaeche extends Application {
         @Override
         public void start(Stage arg0) {
         	try {
-        		Parent root = FXMLLoader.load(getClass().getResource("OberflaecheMain.fxml"));
+        		Parent root = FXMLLoader.load(getClass().getResource("BmiAbfrage.fxml"));
         		Scene szene = new Scene(root);
+        		Image icon = new Image("hshl.png");
+        		arg0.setTitle("Trainingsplan von Gruppe B3");
+        		arg0.getIcons().add(icon);
         		szene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
         		arg0.setScene(szene);
         		arg0.show();
         	} catch(Exception e) {
-        		e.printStackTrace();   
+        		e.printStackTrace();
         	}
 
         }
-}
+
+		}

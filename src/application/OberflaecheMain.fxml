@@ -14,5 +14,6 @@
             <Font size="26.0" />
          </font>
       </Text>
+      <Text layoutX="218.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wofür möchten Sie Trainieren?" />
    </children>
 </AnchorPane>
