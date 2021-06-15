@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EventKlasse">
+   <children>
+      <Label layoutX="133.0" layoutY="58.0" text="Größe:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="149.0" text="Alter:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="238.0" text="Gewicht:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="242.0" layoutY="345.0" mnemonicParsing="false" onAction="#MenuKnopf" text="OK" />
+      <Button layoutX="300.0" layoutY="345.0" mnemonicParsing="false" onAction="#AbbruchKnopf" text="Abbruch" />
+      <TextField fx:id="GroesseFeld" layoutX="300.0" layoutY="60.0" />
+      <TextField fx:id="AlterFeld" layoutX="300.0" layoutY="151.0" />
+      <TextField fx:id="GewichtFeld" layoutX="300.0" layoutY="240.0" />
+   </children>
+</AnchorPane>

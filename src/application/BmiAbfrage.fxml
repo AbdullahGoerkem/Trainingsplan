@@ -12,7 +12,7 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <Button layoutX="123.0" layoutY="188.0" mnemonicParsing="false" text="Ja" />
+      <Button layoutX="123.0" layoutY="188.0" mnemonicParsing="false" onAction="#BmiKnopf" text="Ja" />
       <Button layoutX="458.0" layoutY="188.0" mnemonicParsing="false" onAction="#MenuKnopf" text="Nein" />
       <Text layoutX="89.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hinweis: Anhand BMI Angaben können wir Ihren Trainingsplan besser anpassen." />
       <Text fill="#004b8c" layoutX="174.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zusätzlich bekommen Sie einen Ernährungsplan" />

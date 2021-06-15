@@ -3,14 +3,21 @@ package application;
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
+import javafx.scene.control.TextFormatter;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class EventKlasse {
+
+	
+	@FXML
+	TextField GroesseFeld;
 	
 	private Stage Fenster;
 	private Scene Szene;
@@ -37,4 +44,20 @@ public class EventKlasse {
 		Fenster.setScene(Szene);
 		Fenster.show();
 }
+	public void AbbruchKnopf(ActionEvent e) throws IOException {
+		root = FXMLLoader.load(getClass().getResource("BmiAbfrage.fxml"));
+		Fenster = (Stage)((Node)e.getSource()).getScene().getWindow();
+		Szene = new Scene(root);
+		Fenster.setScene(Szene);
+		Fenster.show();
+}
+	public void BmiKnopf(ActionEvent e) throws IOException {
+		root = FXMLLoader.load(getClass().getResource("BmiJa.fxml"));
+		Fenster = (Stage)((Node)e.getSource()).getScene().getWindow();
+		Szene = new Scene(root);
+		Fenster.setScene(Szene);
+		Fenster.show();
+	}
+
+		
 }
