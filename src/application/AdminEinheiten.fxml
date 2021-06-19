@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="262.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Bereich" />
+      <TextField fx:id="EinheitName" layoutX="339.0" layoutY="143.0" />
+      <TextField fx:id="Schwierigkeit" layoutX="339.0" layoutY="231.0" />
+      <TextField fx:id="VariableEinheit" layoutX="339.0" layoutY="319.0" />
+      <Text layoutX="80.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name der Einheit" />
+      <Text layoutX="72.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schwierigkeitsgrad" />
+      <Text layoutX="129.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Variable" />
+   </children>
+</AnchorPane>

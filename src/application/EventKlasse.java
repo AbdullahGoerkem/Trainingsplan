@@ -58,6 +58,12 @@ public class EventKlasse {
 		Fenster.setScene(Szene);
 		Fenster.show();
 	}
+	public void AdminKnopf(ActionEvent e) throws IOException {
+		root = FXMLLoader.load(getClass().getResource("AdminEinheiten.fxml"));
+		Fenster = (Stage)((Node)e.getSource()).getScene().getWindow();
+		Szene = new Scene(root);
+		Fenster.setScene(Szene);
+		Fenster.show();
 
-		
+	}
 }
