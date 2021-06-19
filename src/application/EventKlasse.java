@@ -23,6 +23,14 @@ public class EventKlasse {
 		Fenster.setScene(Szene);
 		Fenster.show();
 	}
+
+	public void FitterKnopf(ActionEvent e) throws IOException {
+		root = FXMLLoader.load(getClass().getResource("Fitterszene.fxml"));
+		Fenster = (Stage)((Node)e.getSource()).getScene().getWindow();
+		Szene = new Scene(root);
+		Fenster.setScene(Szene);
+		Fenster.show();
+}
 	public void MuskelKnopf(ActionEvent e) throws IOException {
 		root = FXMLLoader.load(getClass().getResource("MuskelSzene.fxml"));
 		Fenster = (Stage)((Node)e.getSource()).getScene().getWindow();
