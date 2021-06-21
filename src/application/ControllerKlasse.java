@@ -18,7 +18,10 @@ public class ControllerKlasse {
 	private Parent root;
 	
 	@FXML
-	TextField GroesseFeld;
+	TextField nameTextFeld;
+	//TextField passTextFeld;
+	
+	/*
 	
 	public void bmiOK(ActionEvent e) throws IOException{
 		 
@@ -33,7 +36,7 @@ public class ControllerKlasse {
 		Szene = new Scene(root);
 		Fenster.setScene(Szene);
 		Fenster.show();
-	}
+	} */
 	public void AbbruchKnopf(ActionEvent e) throws IOException {
 		root = FXMLLoader.load(getClass().getResource("BmiAbfrage.fxml"));
 		Fenster = (Stage)((Node)e.getSource()).getScene().getWindow();
@@ -41,4 +44,18 @@ public class ControllerKlasse {
 		Fenster.setScene(Szene);
 		Fenster.show();
 }
+	public void login(ActionEvent e) throws IOException {
+		String name = nameTextFeld.getText();
+		//String pass = passTextFeld.getText();
+		
+		FXMLLoader loginLoader = new FXMLLoader(getClass().getResource("OberflaecheMain.fxml"));
+		root = loginLoader.load();
+		EventKlasse eventController = loginLoader.getController();
+		eventController.NameUndPasswort(name);
+		
+		Fenster = (Stage)((Node)e.getSource()).getScene().getWindow();
+		Szene = new Scene(root);
+		Fenster.setScene(Szene);
+		Fenster.show();
+	}
 }

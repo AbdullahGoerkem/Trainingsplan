@@ -19,10 +19,12 @@ public class EventKlasse {
 	
 	@FXML
 	Label groesseAusgabe;
+	Label eingeloggtAls;
 	
 	private Stage Fenster;
 	private Scene Szene;
 	private Parent root;
+	
 
 	public void AbnehmenKnopf(ActionEvent e) throws IOException {
 		root = FXMLLoader.load(getClass().getResource("AbnehmenSzene.fxml"));
@@ -70,4 +72,8 @@ public class EventKlasse {
 	public void groesseAnzeigen(String groesse) {
 		groesseAusgabe.setText("Groesse: "+ groesse);
 	}
-}
+	public void NameUndPasswort(String name) {
+		
+				eingeloggtAls.setText("Eingeloggt als: " + name);
+		}
+	}
