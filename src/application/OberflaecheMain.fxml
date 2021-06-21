@@ -7,13 +7,14 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EventKlasse">
    <children>
-      <Button layoutX="88.0" layoutY="200.0" mnemonicParsing="false" onAction="#AbnehmenKnopf" text="männlich" />
-      <Button layoutX="441.0" layoutY="200.0" mnemonicParsing="false" onAction="#MuskelKnopf" text="weiblich" />
+      <Button layoutX="88.0" layoutY="200.0" mnemonicParsing="false" onAction="#AbnehmenKnopf" text="Abnehmen" />
+      <Button layoutX="441.0" layoutY="200.0" mnemonicParsing="false" onAction="#MuskelKnopf" text="Muskelaufbau" />
       <Text layoutX="10.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Willkommen beim Trainingsplan" textAlignment="CENTER" wrappingWidth="580.0">
          <font>
             <Font size="26.0" />
          </font>
       </Text>
-      <Text layoutX="218.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bitte geben sie ihren Geschleacht an." />
+      <Text layoutX="218.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wofür möchten Sie Trainieren?" />
+      <Button layoutX="532.0" layoutY="361.0" mnemonicParsing="false" onAction="#AdminKnopf" text="Admin" />
    </children>
 </AnchorPane>
