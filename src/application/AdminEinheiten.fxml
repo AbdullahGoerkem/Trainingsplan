@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="808.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text layoutX="262.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Bereich" />
-      <TextField fx:id="EinheitName" layoutX="339.0" layoutY="143.0" />
-      <TextField fx:id="Schwierigkeit" layoutX="339.0" layoutY="231.0" />
-      <TextField fx:id="VariableEinheit" layoutX="339.0" layoutY="319.0" />
-      <Text layoutX="80.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name der Einheit" />
-      <Text layoutX="72.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schwierigkeitsgrad" />
-      <Text layoutX="129.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Variable" />
+      <VBox layoutX="-4.0" prefHeight="629.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;;">
+         <children>
+            <Pane prefHeight="105.0" prefWidth="253.0" />
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="64.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;" text="Admin" textFill="#f4f4f5">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;" text="Abnehmen" textFill="#fbf6f6">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="14.0" />
+               </font></Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="74.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;" text="Aufbauen" textFill="fbf6f6">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="14.0" />
+               </font></Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="138.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;" text="Settings" textFill="fbf6f6">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="14.0" />
+               </font></Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="202.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;" text="Impressum" textFill="fbf6f6">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="14.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <SplitPane layoutX="310.0" layoutY="136.0" prefHeight="390.0" prefWidth="419.0" />
    </children>
+   <opaqueInsets>
+      <Insets bottom="10.0" />
+   </opaqueInsets>
 </AnchorPane>
