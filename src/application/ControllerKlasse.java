@@ -19,7 +19,8 @@ public class ControllerKlasse {
 	
 	@FXML
 	TextField nameTextFeld;
-	//TextField passTextFeld;
+	@FXML
+	TextField passTextFeld;
 	
 	/*
 	
@@ -46,16 +47,21 @@ public class ControllerKlasse {
 }
 	public void login(ActionEvent e) throws IOException {
 		String name = nameTextFeld.getText();
-		//String pass = passTextFeld.getText();
+		String pass = passTextFeld.getText();
 		
 		FXMLLoader loginLoader = new FXMLLoader(getClass().getResource("OberflaecheMain.fxml"));
+		if (name.equals("admin") && pass.equals("admin")) {
 		root = loginLoader.load();
 		EventKlasse eventController = loginLoader.getController();
-		eventController.NameUndPasswort(name);
+		eventController.NameUndPasswort(name, pass);
 		
 		Fenster = (Stage)((Node)e.getSource()).getScene().getWindow();
 		Szene = new Scene(root);
 		Fenster.setScene(Szene);
 		Fenster.show();
-	}
-}
+		} else {
+			System.out.println("Falsche angaben");
+		}
+		
+		}
+		}

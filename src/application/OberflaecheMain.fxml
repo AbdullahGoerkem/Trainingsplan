@@ -38,7 +38,7 @@
          </children>
       </VBox>
       <SplitPane layoutX="310.0" layoutY="136.0" prefHeight="390.0" prefWidth="419.0" />
-      <Label fx:id="eingeloggtLabel" layoutX="729.0" layoutY="14.0" text="Label" />
+      <Label fx:id="eingeloggtAls" layoutX="665.0" layoutY="14.0" prefHeight="17.0" prefWidth="140.0" text="Label" />
    </children>
    <opaqueInsets>
       <Insets bottom="10.0" />

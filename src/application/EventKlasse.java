@@ -9,17 +9,15 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import javafx.scene.control.TextFormatter;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class EventKlasse {
 
 	
 	@FXML
-	Label groesseAusgabe;
 	Label eingeloggtAls;
+	Label groesseAusgabe;
+	
 	
 	private Stage Fenster;
 	private Scene Szene;
@@ -69,11 +67,14 @@ public class EventKlasse {
 		Fenster.setScene(Szene);
 		Fenster.show();
 	}
-	public void groesseAnzeigen(String groesse) {
-		groesseAusgabe.setText("Groesse: "+ groesse);
-	}
-	public void NameUndPasswort(String name) {
-		
+	public void NameUndPasswort(String name, String pass) {
+		if (name.equals("admin") && pass.equals("admin")) {
 				eingeloggtAls.setText("Eingeloggt als: " + name);
 		}
+		else {
+			System.out.println("Nutzerdaten ungültig");
+			
+			
+		}
+	}
 	}
