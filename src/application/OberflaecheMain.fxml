@@ -9,16 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="808.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EventKlasse">
+<AnchorPane fx:id="fensterPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="808.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EventKlasse">
    <children>
       <VBox layoutX="-4.0" prefHeight="629.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;;">
          <children>
             <Pane prefHeight="105.0" prefWidth="253.0" />
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="64.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;" text="Admin" textFill="#f4f4f5">
-               <font>
-                  <Font name="Lucida Calligraphy Italic" size="14.0" />
-               </font>
-            </Button>
             <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#AbnehmenKnopf" prefHeight="64.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;" text="Abnehmen" textFill="#fbf6f6">
                <font>
                   <Font name="Lucida Calligraphy Italic" size="14.0" />
@@ -27,18 +22,19 @@
                <font>
                   <Font name="Lucida Calligraphy Italic" size="14.0" />
                </font></Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="138.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;" text="Settings" textFill="fbf6f6">
+            <Button fx:id="bmibutton" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="202.0" mnemonicParsing="false" onAction="#BmiKnopf" prefHeight="70.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;" text="BMI-Rechner" textFill="fbf6f6">
                <font>
                   <Font name="Lucida Calligraphy Italic" size="14.0" />
                </font></Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="202.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;" text="Impressum" textFill="fbf6f6">
+            <Button fx:id="exitButton" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="243.0" mnemonicParsing="false" onAction="#verlassenKnopf" prefHeight="70.0" prefWidth="253.0" style="-fx-background-color: #3F2B63;" text="Verlassen" textFill="fbf6f6">
                <font>
                   <Font name="Lucida Calligraphy Italic" size="14.0" />
-               </font></Button>
+               </font>
+            </Button>
          </children>
       </VBox>
       <SplitPane layoutX="310.0" layoutY="136.0" prefHeight="390.0" prefWidth="419.0" />
-      <Label fx:id="eingeloggtAls" layoutX="665.0" layoutY="14.0" prefHeight="17.0" prefWidth="140.0" text="Label" />
+      <Label fx:id="eingeloggtAls" layoutX="665.0" layoutY="14.0" prefHeight="17.0" prefWidth="140.0" />
    </children>
    <opaqueInsets>
       <Insets bottom="10.0" />

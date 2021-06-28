@@ -8,7 +8,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class EventKlasse {
@@ -16,8 +18,14 @@ public class EventKlasse {
 	
 	@FXML
 	Label eingeloggtAls;
-	Label groesseAusgabe;
-	
+	@FXML
+	Button bmiButton;
+	@FXML
+	Button exitButton;
+	@FXML
+	private AnchorPane fensterPane;
+	@FXML
+	Button weiterButton;
 	
 	private Stage Fenster;
 	private Scene Szene;
@@ -46,20 +54,13 @@ public class EventKlasse {
 		Fenster.show();
 }
 	public void AbbruchKnopf(ActionEvent e) throws IOException {
-		root = FXMLLoader.load(getClass().getResource("BmiAbfrage.fxml"));
+		root = FXMLLoader.load(getClass().getResource("OberflaecheMain.fxml"));
 		Fenster = (Stage)((Node)e.getSource()).getScene().getWindow();
 		Szene = new Scene(root);
 		Fenster.setScene(Szene);
 		Fenster.show();
+		
 }
-
-	public void AdminKnopf(ActionEvent e) throws IOException {
-		root = FXMLLoader.load(getClass().getResource("AdminEinheiten.fxml"));
-		Fenster = (Stage)((Node)e.getSource()).getScene().getWindow();
-		Szene = new Scene(root);
-		Fenster.setScene(Szene);
-		Fenster.show();
-	}
 	public void BmiKnopf(ActionEvent e) throws IOException {
 		root = FXMLLoader.load(getClass().getResource("BmiJa.fxml"));
 		Fenster = (Stage)((Node)e.getSource()).getScene().getWindow();
@@ -76,5 +77,16 @@ public class EventKlasse {
 			
 			
 		}
+	}
+	public void bmiKnopf(ActionEvent e) throws IOException {
+		root = FXMLLoader.load(getClass().getResource("BmiJa.fxml"));
+		Fenster = (Stage)((Node)e.getSource()).getScene().getWindow();
+		Szene = new Scene(root);
+		Fenster.setScene(Szene);
+		Fenster.show();
+	}
+	public void verlassenKnopf(ActionEvent e) {
+		Fenster = (Stage) fensterPane.getScene().getWindow();
+		Fenster.close();
 	}
 	}
